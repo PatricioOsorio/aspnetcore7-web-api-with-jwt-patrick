@@ -1,4 +1,5 @@
 ﻿using ApiNet7WithJwtPatrickGod.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +19,18 @@ namespace ApiNet7WithJwtPatrickGod.Controllers
     public AuthController(IConfiguration configuration)
     {
       _configuration = configuration;
+    }
+
+    // Leer reclamos desde el JWT
+    [HttpGet, Authorize]
+    [Route("GetMyName")]
+    public ActionResult<string> GetMyName()
+    {
+      var userName = User?.Identity?.Name;
+      var rolesClaims = User?.FindAll(ClaimTypes.Role);
+      var roles = rolesClaims?.Select(r => r.Value).ToList();
+
+      return Ok(new { userName, roles });
     }
 
     [HttpPost]
