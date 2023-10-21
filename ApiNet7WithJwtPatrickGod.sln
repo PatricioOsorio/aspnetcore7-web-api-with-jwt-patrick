@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNet7WithJwtPatrickGod", "ApiNet7WithJwtPatrickGod\ApiNet7WithJwtPatrickGod.csproj", "{D1845D34-EF48-4D21-8156-0D3447206930}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1845D34-EF48-4D21-8156-0D3447206930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1845D34-EF48-4D21-8156-0D3447206930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1845D34-EF48-4D21-8156-0D3447206930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1845D34-EF48-4D21-8156-0D3447206930}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC101CE5-3CB4-4DAD-AE5D-F30B5B7CF675}
+	EndGlobalSection
+EndGlobal
